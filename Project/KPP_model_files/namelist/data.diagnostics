@@ -1,0 +1,23 @@
+# Diagnostic Package Choices
+#
+ &diagnostics_list
+     dumpAtLast = .TRUE.,
+#---
+# Daily mean 3D fields
+#---
+  fields(1:5,1) = 'KPPviscA','THETA   ','SALT    ','UVEL    ','VVEL    ',
+  fileName(1)   = 'diags/daily_means/daily_means',
+  frequency(1)  = 86400.,
+#
+#---
+# Hourly mean 3D fields
+#---
+  fields(1:5,2) = 'KPPviscA','THETA   ','SALT    ','UVEL    ','VVEL    ',
+  fileName(2)   = 'diags/hourly_means/hourly_means',
+  frequency(2)  = 3600.,
+#
+ &
+
+# Parameter for Diagnostics of per level statistics:
+ &DIAG_STATIS_PARMS
+ &
