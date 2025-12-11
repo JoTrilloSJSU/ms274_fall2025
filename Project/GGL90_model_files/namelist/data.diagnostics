@@ -1,0 +1,24 @@
+# Diagnostic Package Choices
+#GGL90TKE
+ &diagnostics_list
+     dumpAtLast = .TRUE.,
+#---
+# Daily mean 3D fields
+#---
+  fields(1:7,1) = 'THETA   ','SALT    ','UVEL    ','VVEL    ','GGL90TKE','GGL90Emn','GGL90ArU',
+  fileName(1)   = 'diags/daily_means/daily_means',
+  frequency(1)  = 86400.,
+#
+#---
+# Hourly mean 3D fields
+#---
+  fields(1:7,2) = 'THETA   ','SALT    ','UVEL    ','VVEL    ','GGL90TKE','GGL90Emn','GGL90ArU',
+  fileName(2)   = 'diags/hourly_means/hourly_means',
+  frequency(2)  = 3600.,
+#
+
+ &
+
+# Parameter for Diagnostics of per level statistics:
+ &DIAG_STATIS_PARMS
+ &
