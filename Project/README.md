@@ -19,6 +19,7 @@ Grid Resolution
 
 Temporal Resulion
 * deltaT: 10 seconds
+* Model diagnostics output: hourly, daily
 
 ### Analysis
 To analyze the results, I will create a timeseries of the buoyancy frequency, eddy viscosity, and temperature in SLO bay for both a sampling point used in collected in situ data, and averages for the entire grid. Additionally, I will compare the response of these variables with wind stress in order to compare the two models responses to external forcing through time. For visualization, I will create a movie of temperature differences between the model with wind and the model without wind.
