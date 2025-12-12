@@ -90,4 +90,12 @@ First, import packages to re-create and visualize the model fields here:
 
 _Answering the Science Question_
 
-This notebooks provided some analysis plot to address the science question posed above.
+This notebook serves attemps to answer the science question "How does using K-profile parameterization (KPP) compare with a turbulent kinetic enrgy scheme (GGL90) on the magnitude of mixing and intensity of stratification across the SLO bay." through the following methods:
+
+* Defining three points inside the bay, outside the bay and at the boundary to compare stratification and mixing across the bay and at different depths
+
+* Constructing Hovmoller diagrams for temperature and eddy viscosity
+
+* Finding the residuals from the Hovmoller diagrams to compare differences in magnitude
+
+* Creating a wind time series, and comparing it to eddy viscosity near the surface, and buoyancy frequency calculated for the top 5 meters
