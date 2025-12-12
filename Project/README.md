@@ -14,7 +14,8 @@ Bathymetry
 * Bathymetry data was sourced from ....
 
 Grid Resolution
-*
+* ~200 m grid cell resolution
+* 0.5 m vertical grid cell resolution
 
 Temporal Resulion
 * deltaT: 10 seconds
