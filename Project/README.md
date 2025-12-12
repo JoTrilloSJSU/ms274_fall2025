@@ -11,7 +11,7 @@ To investigate this question, I initially palnned to construct a model spanning 
 For initial conditions, I will use the state of the ECCO Version 5 Model in January of 2017. Similarly, I will construct boundary and external forcing conditions for this model from the ECCO Version 5 model output. 
 
 Bathymetry
-* Bathymetry data was sourced from ....
+* Bathymetry data can be found [here](https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ngdc.mgg.dem:3164/html)
 
 Grid Resolution
 * ~200 m grid cell resolution
