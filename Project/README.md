@@ -44,6 +44,7 @@ Several input files need to be created to run the model. Generate the following 
 Once the input files have been created, the model files can be transferred to the computing cluster. Begin by cloning a copy of MITgcm into your scratch directory and make a folder for the configuration. I made two directories, one for the KPP run and onther for the TKE(GGL90) run e.g.
 
 `mkdir MITgcm/configurations/slo_mixing_kpp`
+
 `mkdir MITgcm/configurations/slo_mixing_tke`
 
 Then, use the scp command to send the corresponding code, input, and namelist directories to each configuration directory (two separate folder should be provided for this under "GGL90_model_files" and "KPP_model_files".
@@ -52,9 +53,11 @@ Then, use the scp command to send the corresponding code, input, and namelist di
 
 Once all of the files are on the computing cluster, the model can be compiled. Make a build directory in the configuration directory for each directory and run the following lines:
 
-`../../../tools/genmake2 -of ../../../tools/build_options/darwin_amd64_gfortran -mods ../code -mpi
-make depend
-make`
+`../../../tools/genmake2 -of ../../../tools/build_options/darwin_amd64_gfortran -mods ../code -mpi`
+
+`make depend`
+
+`make`
 
 ### Step 4.1: Run the model with KPP mixing scheme
 
